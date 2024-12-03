@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Weather App",
     "description": "A simple Weather App",
-    "image": "/public/assets/weather-app.jpg",
+    "image": "/assets/weather-app.jpg",
     "alt": "Weather App",
     "url": "https://portfolio-weather-app-v1.vercel.app/"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Pomodoro App",
     "description": "A simple Pomodoro App",
-    "image": "/public/assets/pomodoro.jpg",
+    "image": "/assets/pomodoro.jpg",
     "alt": "Pomodoro App",
     "url": "https://ma4rk0.github.io/portfolio-Pomodoro-Timer_v1/"
   }

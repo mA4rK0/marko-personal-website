@@ -1,5 +1,6 @@
 ---
 import NavbarLayout from "../ui/Navbar-Layout";
+import Tes from "./Tes.astro";
 ---
 
 <!doctype html>
@@ -18,8 +19,12 @@ import NavbarLayout from "../ui/Navbar-Layout";
   </head>
   <body>
     <NavbarLayout client:only="react" />
+    <Tes />
     <slot name="home" />
     <slot name="portfolio" />
+    <slot name="about" />
+    <slot name="skill" />
+    <slot name="contact" />
     <script>
       import { initAOS } from "../script/init-aos";
       initAOS();

@@ -1,0 +1,53 @@
+---
+import ContactButton from "../components/ContactButton.astro";
+import { Image } from "astro:assets";
+import pp from "../../public/assets/pp.png";
+---
+
+<section id="about" class="bg-white w-full min-h-[50.625rem] py-16">
+  <div class="w-full h-full">
+    <div class="flex justify-center items-center">
+      <h1 class="font-bold text-4xl text-navyBlue">About</h1>
+    </div>
+    <div class="flex flex-wrap items-center lg:justify-between px-4 py-[4.02rem] lg:px-[7.125rem]">
+      <div class="flex flex-col">
+        <div>
+          <p class="text-lightBlue font-semibold lg:text-lg">
+            Hello Everyone 👋, my name is <span class="text-navyBlue block font-bold text-4xl my-1 lg:pb-3">Juan</span>
+          </p>
+        </div>
+        <div class="mb-5">
+          <p class="text-lg text-gray-500 font-medium">Full Stack Web Developer</p>
+        </div>
+        <div class="lg:my-7 mb-5 block">
+          <p class="text-gray-500">I like to learn <span class="text-navyBlue font-bold">new technology</span></p>
+        </div>
+        <div>
+          <ContactButton />
+        </div>
+      </div>
+      <div class="relative mt-7 lg:mt-0">
+        <Image src={pp} alt="Developer Image" width={400} height={400} loading="lazy" class="relative z-10" />
+        <span class="absolute bottom-0">
+          <svg viewBox="0 0 200 200" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#3692FA"
+              d="M49.3,-67.2C60.1,-60,62.5,-40.5,64.1,-23.6C65.7,-6.7,66.6,7.6,63.8,22.1C61,36.6,54.4,51.2,43.2,61.4C31.9,71.5,16,77.1,-0.7,78.1C-17.4,79.1,-34.8,75.5,-46.9,65.6C-59,55.8,-65.9,39.7,-71.7,23C-77.5,6.3,-82.3,-11,-77.2,-24.6C-72.2,-38.3,-57.3,-48.3,-42.8,-54.4C-28.3,-60.4,-14.1,-62.4,2.5,-65.9C19.2,-69.5,38.5,-74.4,49.3,-67.2Z"
+              transform="translate(100 100)"></path>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="px-4 lg:w-1/2 lg:px-[7.125rem]">
+      <div>
+        <p class="text-lightBlue font-semibold text-xl">About Me</p>
+      </div>
+      <div>
+        <hr class="border-lightBlue my-2" />
+      </div>
+      <div>
+        <p class="text-gray-500 font-medium">Hello, my name is Juan, I am from Indonesia, and I am now a full stack web developer, aiming to help create websites from the front-end and from the back-end for those who need it.</p>
+      </div>
+    </div>
+  </div>
+</section>

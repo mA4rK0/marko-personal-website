@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "JavaScript",
+    "image": "/assets/javascript.png",
+    "alt": "JavaScript"
+  },
+  {
+    "id": 2,
+    "name": "Tailwind CSS",
+    "image": "/assets/tailwindcss.png",
+    "alt": "Tailwind CSS"
+  },
+  {
+    "id": 3,
+    "name": "React",
+    "image": "/assets/react.png",
+    "alt": "React"
+  },
+  {
+    "id": 4,
+    "name": "Astro",
+    "image": "/assets/astro.png",
+    "alt": "Astro"
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "image": "/assets/nodejs.png",
+    "alt": "Node.js"
+  },
+  {
+    "id": 6,
+    "name": "Express.js",
+    "image": "/assets/express.png",
+    "alt": "Express.js"
+  },
+  {
+    "id": 7,
+    "name": "MongoDB",
+    "image": "/assets/mongodb.png",
+    "alt": "MongoDB"
+  },
+  {
+    "id": 8,
+    "name": "Next.js",
+    "image": "/assets/nextjs.png",
+    "alt": "Next.js"
+  }
+]

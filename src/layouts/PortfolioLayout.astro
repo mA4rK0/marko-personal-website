@@ -1,6 +1,7 @@
 ---
 import miniProjects from "../collections/miniProjects.json";
 import websites from "../collections/websites.json";
+import ProjectCarousel from "../components/Carousel";
 
 interface Project {
   id: number;
@@ -15,24 +16,17 @@ const mProjects: Project[] = miniProjects;
 const websitesProjects: Project[] = websites;
 ---
 
-<!-- <section id="portfolio" class="w-screen min-h-[50.625rem] bg-navyBlue py-16">
-  <div class="flex flex-col">
-    <div class="flex flex-col items-center justify-center gap-y-3">
-      <h1 id="portfolio" class="text-4xl font-bold text-lightBlue" data-aos="fade-right" data-aos-duration="1000">Portfolio</h1>
-      <div class="text-center text-white">
-        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">here are my latest projects</p>
-        <p class="flex justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">(⬅️ swipe to view ➡️)</p>
-      </div>
-    </div>
-  </div>
-</section> -->
 <section id="portfolio" class="w-full min-h-[50.625rem] bg-navyBlue py-16">
   <div class="flex flex-col gap-y-4 justify-center items-center w-full h-full">
     <div>
       <h1 class="text-4xl font-semibold text-lightBlue">Portfolio</h1>
     </div>
     <div>
-      <p class="text-center text-white">here are my latest projects <span class="block pt-1">(⬅️ swipe to view ➡️)</span></p>
+      <p class="text-center text-white">
+        here are my latest projects <span class="block pt-1">(⬅️ swipe to view ➡️)</span>
+      </p>
     </div>
+    <ProjectCarousel client:only="react" title="Websites" projects={websitesProjects} />
+    <ProjectCarousel client:only="react" title="Mini Projects" projects={mProjects} />
   </div>
 </section>

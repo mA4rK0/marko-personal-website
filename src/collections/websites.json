@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Weather App",
     "description": "A simple Weather App",
-    "image": "/public/assets/weather-app.jpg",
+    "image": "/assets/weather-app.jpg",
     "alt": "Weather App",
     "url": "https://portfolio-weather-app-v1.vercel.app/"
   }
