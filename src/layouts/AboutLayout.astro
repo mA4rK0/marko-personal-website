@@ -4,31 +4,31 @@ import { Image } from "astro:assets";
 import pp from "../../public/assets/pp.png";
 ---
 
-<section id="about" class="bg-white w-full min-h-[50.625rem] py-16">
-  <div class="w-full h-full">
-    <div class="flex justify-center items-center">
-      <h1 class="font-bold text-4xl text-navyBlue">About</h1>
+<section id="about" class="bg-white w-full min-h-[50.625rem] py-16 border border-red-700">
+  <div class="w-full h-full border border-red-700">
+    <div class="flex justify-center items-center border border-red-700">
+      <h1 class="font-bold text-4xl text-navyBlue border border-red-700">About</h1>
     </div>
-    <div class="flex flex-wrap items-center lg:justify-between px-4 py-[4.02rem] lg:px-[7.125rem]">
-      <div class="flex flex-col">
+    <div class="flex flex-wrap items-center lg:justify-between px-4 py-[4.02rem] lg:px-[7.125rem] border border-red-700">
+      <div class="flex flex-col border border-red-700">
         <div>
-          <p class="text-lightBlue font-semibold lg:text-lg">
+          <p class="text-lightBlue font-semibold lg:text-lg border border-red-700">
             Hello Everyone 👋, my name is <span class="text-navyBlue block font-bold text-4xl my-1 lg:pb-3">Juan</span>
           </p>
         </div>
-        <div class="mb-5">
-          <p class="text-lg text-gray-500 font-medium">Full Stack Web Developer</p>
+        <div class="mb-5 border border-red-700">
+          <p class="text-lg text-gray-500 font-medium border border-red-700">Full Stack Web Developer</p>
         </div>
-        <div class="lg:my-7 mb-5 block">
-          <p class="text-gray-500">I like to learn <span class="text-navyBlue font-bold">new technology</span></p>
+        <div class="lg:my-7 mb-5 block border border-red-700">
+          <p class="text-gray-500 border border-red-700">I like to learn <span class="text-navyBlue font-bold border border-red-700">new technology</span></p>
         </div>
         <div>
           <ContactButton />
         </div>
       </div>
-      <div class="relative mt-7 lg:mt-0">
+      <div class="relative mt-7 lg:mt-0 border border-red-700">
         <Image src={pp} alt="Developer Image" width={400} height={400} loading="lazy" class="relative z-10" />
-        <span class="absolute bottom-0">
+        <span class="absolute bottom-0 border border-red-700">
           <svg viewBox="0 0 200 200" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
             <path
               fill="#3692FA"
@@ -38,15 +38,17 @@ import pp from "../../public/assets/pp.png";
         </span>
       </div>
     </div>
-    <div class="px-4 lg:w-1/2 lg:px-[7.125rem]">
+    <div class="px-4 lg:w-1/2 lg:px-[7.125rem] border border-red-700">
       <div>
-        <p class="text-lightBlue font-semibold text-xl">About Me</p>
+        <p class="text-lightBlue font-semibold text-xl border border-red-700">About Me</p>
       </div>
       <div>
         <hr class="border-lightBlue my-2" />
       </div>
       <div>
-        <p class="text-gray-500 font-medium">Hello, my name is Juan, I am from Indonesia, and I am now a full stack web developer, aiming to help create websites from the front-end and from the back-end for those who need it.</p>
+        <p class="text-gray-500 font-medium border border-red-700">
+          Hello, my name is Juan, I am from Indonesia, and I am now a full stack web developer, aiming to help create websites from the front-end and from the back-end for those who need it.
+        </p>
       </div>
     </div>
   </div>
