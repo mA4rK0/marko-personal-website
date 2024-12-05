@@ -75,12 +75,12 @@ const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
             ))}
           </div>
         ) : (
-          <div className="carousel carousel-center rounded-box max-w-[81.5rem] mx-auto ">
+          <div className="carousel carousel-center rounded-box max-w-2xl mx-auto">
             {projects.map((project: Project) => (
-              <div className="carousel-item mx-4 " key={project.id}>
+              <div className="carousel-item" key={project.id}>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  <div className="card bg-base-100 w-96 shadow-xl hover:shadow-lightBlue transition ease-in-out duration-300 ">
-                    <figure className="max-h-[26rem] ">
+                  <div className="card bg-base-100 w-96 mx-4">
+                    <figure className="max-h-[26rem]">
                       <Img src={project.image} alt={project.alt} width={400} height={400} />
                     </figure>
                     <div className="card-body bg-lightBlue text-navyBlue ">

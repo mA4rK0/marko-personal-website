@@ -4,23 +4,23 @@ import { Image } from "astro:assets";
 import pp from "../../public/assets/pp.png";
 ---
 
-<section id="about" class="bg-white w-full min-h-screen pt-16">
+<section id="about" class="bg-white w-full min-h-[51rem] py-16">
   <div class="w-full h-full">
     <div class="flex justify-center items-center">
       <h1 class="font-bold text-4xl text-navyBlue">About</h1>
     </div>
     <div class="flex flex-wrap items-center lg:justify-between px-4 py-16 lg:px-28">
-      <div class="flex flex-col w-full lg:w-1/2">
+      <div class="flex flex-col w-full md:w-1/2">
         <div>
-          <p class="text-lightBlue font-semibold text-base lg:text-lg">
+          <p class="text-lightBlue font-semibold text-base md:text-lg">
             Hello Everyone 👋, my name is
-            <span class="text-navyBlue block font-bold text-2xl lg:text-4xl my-1 lg:pb-3">Juan</span>
+            <span class="text-navyBlue block font-bold text-2xl md:text-4xl my-1 md:pb-3">Juan</span>
           </p>
         </div>
         <div class="mb-5">
           <p class="text-lg text-gray-500 font-medium">Full Stack Web Developer</p>
         </div>
-        <div class="lg:my-7 mb-5 block">
+        <div class="md:my-7 mb-5 block">
           <p class="text-gray-500">
             I like to learn
             <span class="text-navyBlue font-bold">new technology</span>
@@ -31,8 +31,8 @@ import pp from "../../public/assets/pp.png";
         </div>
       </div>
       <!-- <div class="relative mt-7 lg:mt-0 border border-blue-700 w-full lg:w-1/2"></div> -->
-      <div class="relative mt-7 lg:mt-0 w-full lg:w-1/2">
-        <Image src={pp} alt="Developer Image" width={400} height={400} loading="lazy" class="relative z-10 mx-auto lg:mx-0" />
+      <div class="relative mt-7 md:mt-0 w-full md:w-1/2">
+        <Image src={pp} alt="Developer Image" width={400} height={400} loading="lazy" class="relative z-10 mx-auto" />
         <span class="absolute inset-0 flex justify-center items-center">
           <svg viewBox="0 0 200 200" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -43,18 +43,16 @@ import pp from "../../public/assets/pp.png";
         </span>
       </div>
     </div>
-  </div>
-</section>
-<section class="bg-white w-full pb-16">
-  <div class="px-4 lg:w-1/2 lg:px-28 mx-auto">
-    <div>
-      <p class="text-lightBlue font-semibold text-xl">About Me</p>
-    </div>
-    <div>
-      <hr class="border-lightBlue my-2" />
-    </div>
-    <div>
-      <p class="text-gray-500 font-medium">Hello, my name is Juan, I am from Indonesia, and I am now a full stack web developer, aiming to help create websites from the front-end and from the back-end for those who need it.</p>
+    <div class="px-4 pt-16 md:w-1/2 lg:px-28 mx-auto md:mx-0">
+      <div>
+        <p class="text-lightBlue font-semibold text-xl">About Me</p>
+      </div>
+      <div>
+        <hr class="border-lightBlue my-2" />
+      </div>
+      <div>
+        <p class="text-gray-500 font-medium">Hello, my name is Juan, I am from Indonesia, and I am now a full stack web developer, aiming to help create websites from the front-end and from the back-end for those who need it.</p>
+      </div>
     </div>
   </div>
 </section>
