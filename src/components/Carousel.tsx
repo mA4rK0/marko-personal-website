@@ -52,21 +52,21 @@ const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
 
   return (
     <>
-      <section className="flex flex-col border border-red-700">
-        <div className="mx-auto my-11 border border-red-700">
-          <h2 className="text-lightBlue text-2xl font-bold border border-red-700">{title}</h2>
+      <section className="flex flex-col ">
+        <div className="mx-auto my-11 ">
+          <h2 className="text-lightBlue text-2xl font-bold ">{title}</h2>
         </div>
         {isMobile ? (
-          <div className="carousel rounded-box w-80 mx-auto border border-red-700">
+          <div className="carousel rounded-box w-80 mx-auto ">
             {projects.map((project: Project) => (
-              <div className="carousel-item w-full border border-red-700" key={project.id}>
+              <div className="carousel-item w-full " key={project.id}>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  <div className="flex flex-col w-full border border-red-700">
-                    <figure className="max-h-[22rem] border border-red-700">
+                  <div className="flex flex-col w-full ">
+                    <figure className="max-h-[22rem] ">
                       <Img src={project.image} alt={project.alt} width={400} height={400} />
                     </figure>
-                    <div className="bg-lightBlue text-navyBlue py-8 px-8 border border-red-700">
-                      <p className="text-xl font-semibold pb-1 border border-red-700">{project.name}</p>
+                    <div className="bg-lightBlue text-navyBlue py-8 px-8 ">
+                      <p className="text-xl font-semibold pb-1 ">{project.name}</p>
                       <p>{project.description}</p>
                     </div>
                   </div>
@@ -75,16 +75,16 @@ const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
             ))}
           </div>
         ) : (
-          <div className="carousel carousel-center rounded-box max-w-[81.5rem] mx-auto border border-red-700">
+          <div className="carousel carousel-center rounded-box max-w-[81.5rem] mx-auto ">
             {projects.map((project: Project) => (
-              <div className="carousel-item mx-4 border border-red-700" key={project.id}>
+              <div className="carousel-item mx-4 " key={project.id}>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  <div className="card bg-base-100 w-96 shadow-xl hover:shadow-lightBlue transition ease-in-out duration-300 border border-red-700">
-                    <figure className="max-h-[26rem] border border-red-700">
+                  <div className="card bg-base-100 w-96 shadow-xl hover:shadow-lightBlue transition ease-in-out duration-300 ">
+                    <figure className="max-h-[26rem] ">
                       <Img src={project.image} alt={project.alt} width={400} height={400} />
                     </figure>
-                    <div className="card-body bg-lightBlue text-navyBlue border border-red-700">
-                      <h2 className="card-title border border-red-700">{project.name}</h2>
+                    <div className="card-body bg-lightBlue text-navyBlue ">
+                      <h2 className="card-title ">{project.name}</h2>
                       <p>{project.description}</p>
                     </div>
                   </div>

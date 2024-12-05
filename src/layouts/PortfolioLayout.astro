@@ -16,20 +16,17 @@ const mProjects: Project[] = miniProjects;
 const websitesProjects: Project[] = websites;
 ---
 
-<section id="portfolio" class="w-full min-h-[50.625rem] bg-navyBlue py-16 border border-red-700">
-  <div class="flex flex-col gap-y-4 justify-center items-center w-full h-full border border-red-700">
+<section id="portfolio" class="w-full min-h-[50.625rem] bg-navyBlue py-16">
+  <div class="flex flex-col gap-y-4 justify-center items-center w-full h-full">
     <div>
-      <h1 class="text-4xl font-semibold text-lightBlue border border-red-700">Portfolio</h1>
+      <h1 class="text-4xl font-semibold text-lightBlue">Portfolio</h1>
     </div>
     <div>
-      <p class="text-center text-white border border-red-700">
-        here are my latest projects <span class="block pt-1 border border-red-700">(⬅️ swipe to view ➡️)</span>
+      <p class="text-center text-white">
+        here are my latest projects <span class="block pt-1">(⬅️ swipe to view ➡️)</span>
       </p>
     </div>
   </div>
   <ProjectCarousel client:only="react" title="Websites" projects={websitesProjects} />
   <ProjectCarousel client:only="react" title="Mini Projects" projects={mProjects} />
 </section>
-<!-- <section class="pt-36">
-  <div class="container"></div>
-</section> -->
