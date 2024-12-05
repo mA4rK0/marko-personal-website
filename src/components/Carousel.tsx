@@ -54,10 +54,12 @@ const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
     <>
       <section className="flex flex-col ">
         <div className="mx-auto my-11 ">
-          <h2 className="text-lightBlue text-2xl font-bold ">{title}</h2>
+          <h2 className="text-lightBlue text-2xl font-bold" data-aos="fade-up" data-aos-duration="1000">
+            {title}
+          </h2>
         </div>
         {isMobile ? (
-          <div className="carousel rounded-box w-80 mx-auto ">
+          <div className="carousel rounded-box w-80 mx-auto " data-aos="fade-up" data-aos-duration="1000">
             {projects.map((project: Project) => (
               <div className="carousel-item w-full " key={project.id}>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
@@ -75,7 +77,7 @@ const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
             ))}
           </div>
         ) : (
-          <div className="carousel carousel-center rounded-box max-w-2xl mx-auto">
+          <div className="carousel carousel-center rounded-box max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
             {projects.map((project: Project) => (
               <div className="carousel-item" key={project.id}>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
