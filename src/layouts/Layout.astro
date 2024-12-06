@@ -1,6 +1,7 @@
 ---
 import NavbarLayout from "../ui/Navbar-Layout";
 import Tes from "./Tes.astro";
+import main from "../css/main.css";
 ---
 
 <!doctype html>
@@ -15,7 +16,7 @@ import Tes from "./Tes.astro";
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../src/css/main.css" />
+    <link rel="stylesheet" href={main} />
     <meta name="generator" content={Astro.generator} />
     <title>Juan Website</title>
   </head>
