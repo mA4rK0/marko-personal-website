@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Weather App",
-    "description": "A simple Weather App",
+    "description": "A simple weather app",
     "image": "/assets/weather-app.jpg",
     "alt": "Weather App",
     "url": "https://portfolio-weather-app-v1.vercel.app/"
@@ -10,9 +10,17 @@
   {
     "id": 2,
     "name": "Pomodoro App",
-    "description": "A simple Pomodoro App",
+    "description": "A simple pomodoro app",
     "image": "/assets/pomodoro.jpg",
     "alt": "Pomodoro App",
     "url": "https://ma4rk0.github.io/portfolio-Pomodoro-Timer_v1/"
+  },
+  {
+    "id": 3,
+    "name": "Currency Converter",
+    "description": "A simple currency converter around the world",
+    "image": "/assets/currency.png",
+    "alt": "Currency Converter",
+    "url": "https://ma4rk0.github.io/portfolio-CurrencyConverter_v1/"
   }
 ]
