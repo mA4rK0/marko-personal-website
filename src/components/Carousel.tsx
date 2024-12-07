@@ -59,16 +59,16 @@ const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
           </h2>
         </div>
         {isMobile ? (
-          <div className="carousel rounded-box w-80 mx-auto " data-aos="fade-up" data-aos-duration="1000">
+          <div className="carousel rounded-box w-80 mx-auto" data-aos="fade-up" data-aos-duration="1000">
             {projects.map((project: Project) => (
               <div className="carousel-item w-full " key={project.id}>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  <div className="flex flex-col w-full ">
-                    <figure className="max-h-[22rem] ">
-                      <Img src={project.image} alt={project.alt} width={400} height={400} />
+                  <div className="flex flex-col w-full h-full">
+                    <figure className="w-full h-[22rem] overflow-hidden flex items-stretch justify-center">
+                      <Img src={project.image} alt={project.alt} className="object-cover" width={400} height={400} />
                     </figure>
-                    <div className="bg-lightBlue text-navyBlue py-8 px-8 ">
-                      <p className="text-xl font-semibold pb-1 ">{project.name}</p>
+                    <div className="bg-lightBlue text-navyBlue py-8 px-8">
+                      <p className="text-xl font-semibold pb-1">{project.name}</p>
                       <p>{project.description}</p>
                     </div>
                   </div>
@@ -82,8 +82,8 @@ const ProjectCarousel = ({ title, projects }: ProjectCarouselProps) => {
               <div className="carousel-item" key={project.id}>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   <div className="card bg-base-100 w-96 mx-4">
-                    <figure className="max-h-[26rem]">
-                      <Img src={project.image} alt={project.alt} width={400} height={400} />
+                    <figure className="h-[26rem] overflow-hidden flex items-stretch bg-black justify-center">
+                      <Img src={project.image} alt={project.alt} width={400} height={400} className="object-cover" />
                     </figure>
                     <div className="card-body bg-lightBlue text-navyBlue ">
                       <h2 className="card-title ">{project.name}</h2>

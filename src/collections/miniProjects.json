@@ -18,8 +18,8 @@
   {
     "id": 3,
     "name": "Currency Converter",
-    "description": "A simple currency converter around the world",
-    "image": "/assets/currency.png",
+    "description": "A simple currency converter",
+    "image": "/assets/currency.webp",
     "alt": "Currency Converter",
     "url": "https://ma4rk0.github.io/portfolio-CurrencyConverter_v1/"
   }
