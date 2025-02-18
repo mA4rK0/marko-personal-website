@@ -11,7 +11,7 @@ Astro, link: https://astro.build/
 Lucide, link: https://lucide.dev/guide/
 
 ## CSS Framework
-1. Tailwind CSS, link: https://tailwindcss.com/
+Tailwind CSS, link: https://tailwindcss.com/
 
 ## Component Library 
 daisyUI v4.12.23, link : https://daisyui.com/
